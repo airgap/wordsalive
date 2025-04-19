@@ -4,7 +4,7 @@ export const hashcol = (word: string): [string, string] => {
     0,
   );
   const hue = (hash >>> 0) % 360;
-  const bg = `hsl(${hue}, 70%, 10%)`;
-  const fg = `hsl(${(hue + 180) % 360}, 90%, 90%)`;
-  return [bg, fg];
+  const dark = `hsl(${hue}, 70%, 10%)`;
+  const light = `hsl(${(hue + 180) % 360}, 90%, 90%)`;
+  return [dark, light];
 };

@@ -1,5 +1,5 @@
 import { despawn } from "./despawn";
-import { getletter } from "./getLetter";
+import { getLetter } from "./getLetter";
 import { hashcol } from "./hashcol";
 import { spawn } from "./spawn";
 import { letters, textox, unusedLetters, usedLetters, words } from "./vars";
@@ -14,7 +14,7 @@ export function relocate() {
   for (let l = 0; l < word.length; l++) {
     const letter = word[l] as string;
     var elem;
-    if ((elem = getletter(letter))) {
+    if ((elem = getLetter(letter))) {
       //delete unusedLetters[unusedLetters.indexOf(elem)];
       unusedLetters.splice(unusedLetters.indexOf(elem), 1);
       usedLetters.push(elem);

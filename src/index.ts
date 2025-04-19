@@ -1,7 +1,7 @@
 import { fetchWords } from "./fetchWords";
 import { relocate } from "./relocate";
 
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => {
   relocate();
 
   fetchWords();

@@ -17,12 +17,12 @@ html
 	font-family: "Spline Sans Mono", monospace
 	transition: all 0.5s ease-in-out
 	transform: translateY(-70%)
-	animation: breathe 4s ease-in-out infinite
+	animation: breathe 4s ease-in-out infinite, fade 60s linear forwards
 
 @media screen and (prefers-color-scheme: dark)
 	body
-		background-color: --dark
-		color: --light
+		// background-color: --dark
+		// color: --light
 @keyframes breathe
 	0%
 		font-weight: 300
@@ -30,3 +30,8 @@ html
 		font-weight: 700
 	100%
 		font-weight: 300
+@keyframes fade
+	0%
+		opacity: 1
+	100%
+		opacity: .1

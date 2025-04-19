@@ -11,6 +11,7 @@ export default defineConfig({
   },
   build: {
     cssMinify: "lightningcss",
+    minify: false,
   },
   plugins: [viteSingleFile({ removeViteModuleLoader: true })],
 });

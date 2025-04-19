@@ -1,6 +1,4 @@
-export function spawn(elelm: HTMLElement) {
-  elelm.style.top = "-100vh";
-  setTimeout(() => {
-    elelm.style.top = "50vh";
-  }, 0);
-}
+export const spawn = (elem: HTMLElement) => {
+  elem.style.top = "-100vh";
+  setTimeout(() => (elem.style.top = "50vh"), 0);
+};
