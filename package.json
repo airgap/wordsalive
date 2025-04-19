@@ -1,0 +1,18 @@
+{
+  "name": "wordsalive",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "vite",
+    "build": "bun build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "brotli": "^1.3.3",
+    "vite": "^6.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
