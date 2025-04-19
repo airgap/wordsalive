@@ -1,31 +1,13 @@
 <html>
   <head>
     <title>Words Alive</title>
-    <style>
-      #text {
-        --scale: 1;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .letter {
-        position: absolute;
-        font-size: calc(150vw * var(--scale)); /*15vw*/
-        font-family: monospace;
-        transition: all 0.5s ease-in-out;
-        transform: translateY(-70%);
-        *background: red;
-        *line-height: calc(1vw * var(--scale));
-      }
-    </style>
-    <script src="./index.ts"></script>
+    <link rel="stylesheet" href="./src/style.sass">
+    <script type="module" src="./src/index.ts"></script>
   </head>
 
   <body>
     <div id="cont">
       <div id="text">
-        <!--<span class="letter">hello</span>-->
       </div>
     </div>
   </body>

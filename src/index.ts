@@ -16,7 +16,7 @@ window.addEventListener("load", async () => {
   relocate();
 
   function relocate() {
-    word = words[Math.floor(Math.random() * words.length) /*cowrd++*/];
+    word = words[Math.floor(Date.now() / 5000) % words.length];
     usedLetters = [];
     unusedLetters = [];
     textox?.style.setProperty("--scale", (1 / word.length).toLocaleString());

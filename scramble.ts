@@ -1,4 +1,4 @@
-const list = await Bun.file("./words.csv")
+const list = await Bun.file("./alphabetical.csv")
   .text()
   .then((t) => t.trim().split("\n"));
 const scrambled = [];
