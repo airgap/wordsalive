@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "serve": "vite",
-    "build": "bun build"
+    "build": "vite build"
   },
   "devDependencies": {
     "@types/bun": "latest",
