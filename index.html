@@ -76,7 +76,7 @@
 
 												fetch('words.csv').then(res => res.text()).then(async r => {
 													await new Promise(resolve => setTimeout(resolve, 1000));
-													words = r.split('\n');
+													words = r.trim().split('\n');
 													relocate();
 															    let timer = setInterval(relocate, 5000);});
 
