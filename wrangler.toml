@@ -10,5 +10,4 @@ bucket = "./dist/"
 command = "bun run build"
 
 [build.upload]
-format = "modules"
 dir = "./dist"
