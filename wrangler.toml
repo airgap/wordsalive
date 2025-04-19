@@ -1,0 +1,14 @@
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-09-23"
+[env.production]
+name = "wordsalive"
+
+[site]
+bucket = "./dist/"
+
+[build]
+command = "bun run build"
+
+[build.upload]
+format = "modules"
+dir = "./dist"
