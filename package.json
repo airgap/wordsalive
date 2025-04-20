@@ -6,13 +6,15 @@
     "serve": "vite",
     "build": "vite build",
     "format": "prettier -w .",
-    "publish": "wrangler pages deploy dist"
+    "publish": "wrangler pages deploy dist",
+    "clean": "rm -rf node_modules dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "browserslist": "^4.24.4",
     "lightningcss": "^1.29.3",
     "prettier": "^3.5.3",
+    "sass-embedded": "^1.86.3",
     "typescript": "^5",
     "vite": "^6.3.2",
     "vite-plugin-singlefile": "^2.2.0"
